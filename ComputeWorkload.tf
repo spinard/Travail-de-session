@@ -5,7 +5,7 @@ resource "google_compute_instance" "master" {
   tags	= ["subnet-workload"]
 
   disk {
-    image = "debian-cloud/debian-8"
+    image = "coreos-cloud/coreos-stable"
   }
 
   network_interface {
